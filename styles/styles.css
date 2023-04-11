@@ -67,35 +67,71 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 6fr 3fr;
+    grid-template-columns: 7fr 1fr;
     gap: 50px;
+    align-items: center;
 }
 
 .header > div {
-    padding: 10px 30px;
+    padding: 0 30px;
     margin: 0 10px;
 }
 
 .search-bar {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 1rem;
 }
 
+input[type="search"] {
+    appearance: none;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: 2rem;
+    line-height: 2rem;
+    width: 80%;
+    padding: 0 1rem;
+}
+
+
+
 .profile-btn {
+    font-weight: 700;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: end;
+    align-items: center;
+    justify-items: center;
+    justify-self: end;
+    width: max-content;
+    gap: 1.3rem;
+}
+
+.profile-btn a {
+    color: black;
 }
 
 .greeting {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    justify-items: start;
 }
 
 .creation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    gap: 2rem;
+}
+
+.creation button {
+    height: 2.6rem;
+    width: 7rem;
+    font-size: medium;
+    font-weight: 700;
+    border: none;
+    background-color: #1992d4;
+    border-radius: 2rem;
 }
 
 /* DASHBOARD */
@@ -123,7 +159,12 @@ body {
     font-size: large;
     grid-template-columns: 1fr 5fr;
     align-items: center;
+}
 
+.dashboard {
+    font-size: xx-large;
+    gap: 0.5rem;
+    padding: 10px 0;
 }
 
 .svg {
@@ -135,7 +176,7 @@ body {
     filter: invert(0%);
 }
 
-a {
+a, button {
     color: white;
     text-decoration: none;
     position: relative;
@@ -143,8 +184,10 @@ a {
     transition: all .2s ease-in-out;
 }
 
-a:hover {
+a:hover,
+button:hover {
     top: -2px;
+    cursor: pointer;
 }
 
 /* MAIN-CONTENT */
@@ -228,7 +271,6 @@ a:hover {
 .announcement:not(:last-child) {
     border-bottom: 2px solid rgb(216, 216, 216);
 }
-
 
 .acc {
     display: grid;
