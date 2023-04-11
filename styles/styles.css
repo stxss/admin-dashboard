@@ -209,6 +209,8 @@ a:hover {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    top: 0;
+    transition: all .2s ease-in-out;
 }
 
 .announcements .wrapper,
