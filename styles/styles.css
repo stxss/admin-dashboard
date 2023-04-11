@@ -118,8 +118,33 @@ body {
 }
 
 .dash-btn {
+    display: grid;
     padding: 10px;
     font-size: large;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+
+}
+
+.svg {
+    filter: invert(100%);
+}
+
+.header .svg,
+.content .svg {
+    filter: invert(0%);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out;
+}
+
+a:hover {
+    top: -2px;
 }
 
 /* MAIN-CONTENT */
