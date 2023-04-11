@@ -52,7 +52,7 @@ body {
     display: grid;
     grid-template-columns: minmax(min-content, 20rem);
     grid-template-rows: auto 1fr;
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
 }
 
